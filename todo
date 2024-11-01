@@ -1,12 +1,19 @@
 1. "npm i"
+
 2. Create .env file with the following values, then edit it to suit your needs
    JAVA_EXECUTABLE=C:\Program Files\AdoptOpenJDK\jdk-16.0.1.9-hotspot\bin\java.exe
    ROOT=D:\TestRoot2
    BASE_URL=http://localhost:8080/
    HELIOS_DATA_FOLDER=C:\Users\user\AppData\Roaming\Helios Launcher
+
 3. "npm start -- init root"
+
 4. "npm start -- generate server [server name] [Minecraft Version eg 1.12.2] --forge [forge version eg 14.23.5.2859]"
+
 4-1. "npm start -- generate server-curseforge <id> <zipFile>"
+
 5. Put your mods, and libraries in folder ROOT\servers\yourserver-mcversion
+
 6. Generate distro "npm start -- generate distro"
+
 7. On your launcher, in app/assets/js/distromanager.js on line 7, edit the url to match your own distribution.json url
